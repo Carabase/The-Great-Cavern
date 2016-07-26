@@ -1,2 +1,2 @@
 # The-Great-Cavern
-A short text-adventure
+A short text-adventure coded in Python.

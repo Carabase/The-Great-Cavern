@@ -1,0 +1,2 @@
+c:\users\paul\documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\The Great Cavern.csprojResolveAssemblyReference.cache
+c:\users\paul\documents\visual studio 2015\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\The Great Cavern.exe.config

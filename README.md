@@ -4,3 +4,5 @@ To do List:
 Add more NPC Interaction
 Generalize Events
 Add Graphics
+
+Later on a C# port of this was written followed by an extensive rewrite that added graphics, and a very flexible engine, though there isn't a way to interact with NPCs yet.

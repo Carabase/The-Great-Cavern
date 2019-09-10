@@ -1,0 +1,52 @@
+﻿<Window x:Name="The_Great_Cavern_2"
+        x:Class="GreatCavern2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GreatCavern2"
+        mc:Ignorable="d"
+        
+        Title="The Great Cavern 2"
+        Height="{x:Static SystemParameters.PrimaryScreenHeight}" 
+        Width="{x:Static SystemParameters.PrimaryScreenWidth}"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        WindowStyle="None"
+        KeyDown="The_Great_Cavern_2_KeyDown">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="414*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="227*"/>
+            <RowDefinition Height="39*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="textBox" KeyDown="textBox_KeyDown" HorizontalAlignment="Left" Margin="0,3,0,0" TextWrapping="Wrap" Text="" Width="1275" FontSize="26" FontFamily="Cambria" Grid.Row="3"/>
+        <TextBlock x:Name="textBlock" TextAlignment="Center" Margin="233,0,233,226" TextWrapping="Wrap" Text="" Grid.Row="1" Grid.RowSpan="2" FontSize="18" FontFamily="Cambria" FontWeight="Bold"/>
+        <Border BorderThickness="1" Margin="0,73,994,71" >
+            <Canvas x:Name="Frame" HorizontalAlignment="Left" Height="270" VerticalAlignment="Top" Width="281" Margin="-1"  >
+                <Image x:Name="Map"  local:DraggableExtender.CanDrag="true" Height="663" Width="642" Canvas.Left="-184" Canvas.Top="-197"/>
+
+            </Canvas>
+        </Border>
+        <Border BorderThickness="1"
+                BorderBrush="#FF000000" Margin="281,0,281,0" Height="404" VerticalAlignment="Top">
+            <Image x:Name="image" Stretch="Fill" />
+        </Border>
+        <FlowDocumentScrollViewer x:Name="Scroller" Margin="0,1,0,2" Grid.Row="2">
+            <FlowDocument x:Name="Doc" Loaded="FlowDocument_Loaded">
+                <Paragraph x:Name="Test"  FontSize="15" FontFamily="Cambria" />
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+
+        <Border BorderThickness="2" Margin="1047,0,0,53">
+            <Canvas Margin="-2">
+                <ListView x:Name="listView"   Margin="1039,0,0,71" Height="306" VerticalAlignment="Bottom">
+                </ListView>
+                <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="1039,10,0,0" TextWrapping="Wrap" Text="Inventory" TextAlignment="Center" FontWeight="Bold" FontFamily="Cambria" Width="236" Height="37" VerticalAlignment="Top"/>
+            </Canvas>
+        </Border>
+
+    </Grid>
+</Window>
